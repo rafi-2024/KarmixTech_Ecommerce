@@ -2,9 +2,7 @@ import { db } from "@/lib/db";
 import ProductCard from "@/components/products/ProductCard";
 import ProductsFilter from "@/components/products/ProductsFilter";
 
-interface ProductsPageProps {
-  searchParams?: { category?: string };
-}
+export const dynamic = "force-dynamic";
 
 const categoryOptions = [
   { name: "Electronics", slug: "electronics" },
@@ -15,8 +13,13 @@ const categoryOptions = [
 
 export default async function ProductsPage({
   searchParams,
-}: ProductsPageProps) {
-  const filterCategory = searchParams?.category;
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const resolvedSearchParams = await searchParams;
+  const filterCategory = Array.isArray(resolvedSearchParams.category)
+    ? resolvedSearchParams.category[0]
+    : resolvedSearchParams.category;
 
   const products = await db.product.findMany({
     where: {
