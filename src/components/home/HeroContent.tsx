@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const categories = [
-  "Electronics",
-  "Fashion",
-  "Home & Living",
-  "Beauty",
+  { label: "Electronics", slug: "electronics" },
+  { label: "Fashion", slug: "clothing" },
+  { label: "Home & Living", slug: "home" },
+  { label: "Beauty", slug: "beauty" },
 ];
 
 export default function HeroContent() {
@@ -30,12 +30,14 @@ export default function HeroContent() {
       {/* Category Pills */}
       <div className="mt-8 flex flex-wrap gap-3">
         {categories.map((category) => (
-          <span
-            key={category}
-            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm"
+          <Link
+            key={category.slug}
+            href={`/products?category=${category.slug}`}
+            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-blue-300 hover:text-blue-700"
+            aria-label={`Browse ${category.label}`}
           >
-            {category}
-          </span>
+            {category.label}
+          </Link>
         ))}
       </div>
 

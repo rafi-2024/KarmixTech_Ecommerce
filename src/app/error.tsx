@@ -1,6 +1,6 @@
 "use client";
 
-export default function GlobalError({ error }: { error: Error }) {
+export default function ErrorPage({ error }: { error: Error }) {
   return (
     <div className="container mx-auto px-6 py-24 text-center">
       <p className="text-sm font-semibold uppercase tracking-[0.32em] text-red-600">

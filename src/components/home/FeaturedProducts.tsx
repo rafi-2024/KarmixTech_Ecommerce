@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { db } from "@/lib/db";
 import ProductCard from "./ProductCard";
 
@@ -34,11 +35,21 @@ export default async function FeaturedProducts() {
             </p>
           </div>
         ) : (
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <>
+            <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+            <div className="mt-12 text-center">
+              <Link
+                href="/products"
+                className="inline-flex rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                Browse full catalog
+              </Link>
+            </div>
+          </>
         )}
       </div>
     </section>

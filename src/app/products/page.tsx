@@ -1,22 +1,69 @@
-import Link from "next/link";
+import { db } from "@/lib/db";
+import ProductCard from "@/components/products/ProductCard";
+import ProductsFilter from "@/components/products/ProductsFilter";
 
-export default function ProductsPage() {
+interface ProductsPageProps {
+  searchParams?: { category?: string };
+}
+
+const categoryOptions = [
+  { name: "Electronics", slug: "electronics" },
+  { name: "Clothing", slug: "clothing" },
+  { name: "Home & Living", slug: "home" },
+  { name: "Beauty", slug: "beauty" },
+];
+
+export default async function ProductsPage({
+  searchParams,
+}: ProductsPageProps) {
+  const filterCategory = searchParams?.category;
+
+  const products = await db.product.findMany({
+    where: {
+      status: "ACTIVE",
+      category: filterCategory ? { slug: filterCategory } : undefined,
+    },
+    include: { category: true },
+    orderBy: { createdAt: "desc" },
+  });
+
   return (
     <div className="container mx-auto px-6 py-24">
-      <h1 className="text-4xl font-bold text-slate-900">
-        Products
-      </h1>
-      <p className="mt-4 text-lg text-slate-600">
-        This page will display product browsing once the catalog page is implemented.
-      </p>
-      <div className="mt-8">
-        <Link
-          href="/"
-          className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-        >
-          Back to homepage
-        </Link>
+      <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
+            Product catalog
+          </p>
+          <h1 className="mt-3 text-4xl font-bold text-slate-900">
+            Browse our products
+          </h1>
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+            Explore active products from the database, filtered by category where requested.
+          </p>
+        </div>
+
+        <ProductsFilter
+          categories={categoryOptions}
+          selectedCategory={filterCategory}
+        />
       </div>
+
+      {products.length === 0 ? (
+        <div className="rounded-3xl border border-dashed border-slate-300 bg-white px-8 py-20 text-center">
+          <p className="text-lg font-semibold text-slate-900">
+            No products found.
+          </p>
+          <p className="mt-3 text-slate-600">
+            Try a different category or check back after the database is seeded.
+          </p>
+        </div>
+      ) : (
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

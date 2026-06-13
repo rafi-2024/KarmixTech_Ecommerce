@@ -20,7 +20,7 @@ function getProductImage(categorySlug: string) {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
         <Image
           src={getProductImage(product.category.slug)}
           alt={`${product.name} in ${product.category.name}`}
@@ -50,7 +50,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={`/products?category=${product.category.slug}`}
             className="inline-flex shrink-0 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
           >
-            View category
+            Browse {product.category.name}
           </Link>
         </div>
       </div>
