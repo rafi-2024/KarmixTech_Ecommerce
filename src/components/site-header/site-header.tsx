@@ -41,7 +41,7 @@ export function SiteHeader() {
           <span className={styles.brandMark} aria-hidden="true">
             K
           </span>
-          <span>KarmixTech</span>
+          <span>Karmech-Commerce</span>
         </Link>
 
         <button
