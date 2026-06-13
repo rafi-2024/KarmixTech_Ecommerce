@@ -1,57 +1,96 @@
-import { PrismaClient } from "@prisma/client";
+import fs from "fs/promises";
+import path from "path";
+import { PrismaClient, Decimal } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+
+interface SeedCategory {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string;
+}
+
+interface SeedProduct {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string;
+  price: number;
+  stock: number;
+  status: string;
+  imageUrl?: string;
+  categoryId: string;
+}
+
 async function main() {
+  const seedPath = path.resolve(__dirname, "../public/ecommerce-seed-data.json");
+  const rawJson = await fs.readFile(seedPath, "utf-8");
+  const seedData = JSON.parse(rawJson) as {
+    [key: string]: SeedCategory[] | SeedProduct[];
+  };
+
+  const categories = seedData["/seed/categories.json"] as SeedCategory[];
+  const products = seedData["/seed/products.json"] as SeedProduct[];
+
+  if (!categories || !products) {
+    throw new Error(
+      `Seed file did not contain expected "/seed/categories.json" or "/seed/products.json" arrays.`
+    );
+  }
+
   await prisma.product.deleteMany();
   await prisma.category.deleteMany();
 
-  const electronics = await prisma.category.create({
-    data: {
-      name: "Electronics",
-      slug: "electronics",
-      description: "Electronic devices and accessories",
-    },
-  });
+  for (const category of categories) {
+    await prisma.category.upsert({
+      where: { slug: category.slug },
+      update: {
+        name: category.name,
+        description: category.description,
+      },
+      create: {
+        id: category.id,
+        name: category.name,
+        slug: category.slug,
+        description: category.description,
+      },
+    });
+  }
 
-  const clothing = await prisma.category.create({
-    data: {
-      name: "Clothing",
-      slug: "clothing",
-      description: "Fashion and apparel",
-    },
-  });
-
-  await prisma.product.createMany({
-    data: [
-      {
-        name: "Wireless Headphones",
-        slug: "wireless-headphones",
-        price: 99.99,
-        stock: 50,
-        status: "ACTIVE",
-        categoryId: electronics.id,
+  for (const product of products) {
+    await prisma.product.upsert({
+      where: { slug: product.slug },
+      update: {
+        name: product.name,
+        description: product.description,
+        price: new Decimal(product.price.toString()),
+        stock: product.stock,
+        status: product.status as "DRAFT" | "ACTIVE" | "ARCHIVED",
+        imageUrl: product.imageUrl,
+        categoryId: product.categoryId,
       },
-      {
-        name: "Gaming Mouse",
-        slug: "gaming-mouse",
-        price: 49.99,
-        stock: 100,
-        status: "ACTIVE",
-        categoryId: electronics.id,
+      create: {
+        id: product.id,
+        name: product.name,
+        slug: product.slug,
+        description: product.description,
+        price: new Decimal(product.price.toString()),
+        stock: product.stock,
+        status: product.status as "DRAFT" | "ACTIVE" | "ARCHIVED",
+        imageUrl: product.imageUrl,
+        categoryId: product.categoryId,
       },
-      {
-        name: "Cotton T-Shirt",
-        slug: "cotton-tshirt",
-        price: 19.99,
-        stock: 200,
-        status: "ACTIVE",
-        categoryId: clothing.id,
-      },
-    ],
-  });
+    });
+  }
 }
 
 main()
-  .catch(console.error)
-  .finally(() => prisma.$disconnect());
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

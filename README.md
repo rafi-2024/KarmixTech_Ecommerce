@@ -64,6 +64,12 @@ docker compose up --build
 
 This starts the full local development stack: Next.js, PostgreSQL, Prisma migrations, and seed data loading.
 
+To rerun the seed manually after the containers are up:
+
+```bash
+docker compose exec app npx tsx prisma/seed.ts
+```
+
 Open <http://localhost:3000>. Source changes are reflected by the development server.
 
 Stop the application:

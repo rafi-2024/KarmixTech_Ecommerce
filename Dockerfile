@@ -17,6 +17,10 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 WORKDIR /app
 
+RUN apt-get update && \
+    apt-get install -y openssl && \
+    rm -rf /var/lib/apt/lists/*
+
 COPY --from=dependencies --chown=node:node /app/node_modules ./node_modules
 COPY --chown=node:node . .
 RUN chmod +x ./docker-entrypoint.sh
