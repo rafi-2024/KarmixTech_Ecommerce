@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI/UX Design"
+  short_description: "Improve product interfaces."
+  default_prompt: "Use this skill to design or refine an interface by following the current product, design system, framework, workflows, accessibility needs, responsive behavior, and visual language."
