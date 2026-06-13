@@ -24,7 +24,7 @@ This checklist keeps the project small, reviewable, and easy to learn. Complete 
 
 ## Phase 1: Application Foundation
 
-- [ ] **Task 1.1 - Scaffold the Next.js application**
+- [x] **Task 1.1 - Scaffold the Next.js application**
   - Outcome: A TypeScript Next.js App Router project runs locally with linting.
   - Learn: App Router folders, `layout.tsx`, `page.tsx`, server components, and npm scripts.
   - Verify: `npm run lint` and `npm run build`.

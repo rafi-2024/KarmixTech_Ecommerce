@@ -40,7 +40,32 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Task 0.1 is complete: the requirements, architecture, and incremental learning roadmap have been documented. Application scaffolding is the next task.
+Tasks 0.1 and 1.1 are complete. The repository now has a minimal Next.js App Router application with TypeScript and ESLint. The next task is the reusable responsive design foundation.
+
+## Local Setup
+
+Requirements:
+
+- Node.js 20.9 or newer
+- npm
+
+Run the application:
+
+```bash
+npm install
+npm run dev
+```
+
+Open <http://localhost:3000>.
+
+Verify the foundation:
+
+```bash
+npm run lint
+npm run build
+```
+
+PostgreSQL is planned but is not connected yet. It will be added in Phase 2 so the database setup can be learned independently from the Next.js scaffold.
 
 ## Repository
 
