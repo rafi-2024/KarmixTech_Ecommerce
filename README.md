@@ -110,6 +110,23 @@ Do not run the native and containerized development servers at the same time bec
 
 PostgreSQL is connected through Docker Compose and Prisma, so the development stack now includes a fully seeded local database.
 
+## Deploying to Vercel
+
+This project is ready to deploy on Vercel with a production PostgreSQL database.
+
+1. Push the repository to GitHub.
+2. Create a cloud PostgreSQL database (Supabase, Neon, Render, ElephantSQL, etc.).
+3. In the Vercel dashboard, add the environment variable using placeholder values, not exact production credentials:
+
+   ```bash
+   DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>?schema=public
+   ```
+
+4. Connect your GitHub repository in Vercel.
+5. Use the default Vercel settings and deploy.
+
+If you want a production-ready database seed, run Prisma migrations and seed locally, then point Vercel to the same external database.
+
 ## Repository
 
 GitHub: <https://github.com/rafi-2024/KarmixTech_Ecommerce>

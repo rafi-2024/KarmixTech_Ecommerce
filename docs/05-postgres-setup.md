@@ -90,10 +90,10 @@ Database configuration is stored using environment variables.
 Example:
 
 ```env
-POSTGRES_DB=ecommerce
-POSTGRES_USER=ecommerce
-POSTGRES_PASSWORD=changeme
-POSTGRES_PORT=5432
+POSTGRES_DB=<your_database_name>
+POSTGRES_USER=<your_database_user>
+POSTGRES_PASSWORD=<your_database_password>
+POSTGRES_PORT=<your_database_port>
 ```
 
 ### Variable Descriptions
