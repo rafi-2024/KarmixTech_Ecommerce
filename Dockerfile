@@ -19,6 +19,7 @@ WORKDIR /app
 
 COPY --from=dependencies --chown=node:node /app/node_modules ./node_modules
 COPY --chown=node:node . .
+RUN chmod +x ./docker-entrypoint.sh
 
 RUN mkdir -p .next && chown -R node:node .next
 
@@ -26,4 +27,5 @@ USER node
 
 EXPOSE 3000
 
+ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["npm", "run", "dev", "--", "--hostname", "0.0.0.0", "--webpack"]
