@@ -43,7 +43,7 @@ export default function HeroContent() {
       <div className="mt-10 flex flex-wrap gap-4">
         <Link
           href="/products"
-          className="rounded-xl text-white bg-slate-900 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
+          className="rounded-xl bg-slate-900 px-8 py-4 font-semibold text-white transition hover:bg-slate-800"
         >
           Shop Products
         </Link>
