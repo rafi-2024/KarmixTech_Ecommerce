@@ -3,22 +3,22 @@ import CategoryCard from "./CategoryCard";
 const categories = [
   {
     name: "Electronics",
-    image: "/images/categories/electronics.jpg",
+    image: "/images/categories/electronics.png",
     href: "/products?category=electronics",
   },
   {
     name: "Clothing",
-    image: "/images/categories/clothing.jpg",
+    image: "/images/categories/fashion.png",
     href: "/products?category=clothing",
   },
   {
     name: "Home & Living",
-    image: "/images/categories/home.jpg",
+    image: "/images/categories/home.png",
     href: "/products?category=home",
   },
   {
     name: "Beauty",
-    image: "/images/categories/beauty.jpg",
+    image: "/images/categories/beauty.png",
     href: "/products?category=beauty",
   },
 ];
