@@ -1,29 +1,28 @@
+import { db } from "@/lib/db";
 import CategoryCard from "./CategoryCard";
 
-const categories = [
-  {
-    name: "Electronics",
-    image: "/images/categories/electronics.png",
-    href: "/products?category=electronics",
-  },
-  {
-    name: "Clothing",
-    image: "/images/categories/fashion.png",
-    href: "/products?category=clothing",
-  },
-  {
-    name: "Home & Living",
-    image: "/images/categories/home.png",
-    href: "/products?category=home",
-  },
-  {
-    name: "Beauty",
-    image: "/images/categories/beauty.png",
-    href: "/products?category=beauty",
-  },
-];
+const categoryImageMap: { [key: string]: string } = {
+  electronics: "/images/categories/electronics.png",
+  fashion: "/images/categories/fashion.png",
+  "home-living": "/images/categories/home.png",
+  "beauty-skincare": "/images/categories/beauty.png",
+  "sports-fitness": "/images/categories/sports.png",
+  books: "/images/categories/books.png",
+  "toys-games": "/images/categories/toys.png",
+  automotive: "/images/categories/automotive.png",
+};
 
-export default function FeaturedCategories() {
+export default async function FeaturedCategories() {
+  const categories = await db.category.findMany({
+    take: 4,
+  });
+
+  const enrichedCategories = categories.map((category) => ({
+    name: category.name,
+    slug: category.slug,
+    image: categoryImageMap[category.slug] || "/images/categories/default.png",
+    href: `/products?category=${category.slug}`,
+  }));
   return (
     <section
       id="categories"
@@ -41,9 +40,9 @@ export default function FeaturedCategories() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {categories.map((category) => (
+          {enrichedCategories.map((category) => (
             <CategoryCard
-              key={category.name}
+              key={category.slug}
               {...category}
             />
           ))}
