@@ -24,7 +24,9 @@ Next.js application
 PostgreSQL
 ```
 
-For local development, PostgreSQL will run in Docker Compose. The Next.js development server will initially run through npm so logs and hot reload remain easy to understand.
+The minimal Next.js application will be containerized immediately after scaffolding, before design or product features are added. Docker Compose will provide a reproducible development workflow with live source updates, while the native npm workflow remains documented for learning and troubleshooting.
+
+PostgreSQL will be added as a separate Docker Compose service in Phase 2. Keeping application containerization and database introduction as distinct tasks makes image-building, networking, persistence, and database concepts easier to learn independently. Production image hardening remains a later delivery task because its optimized build, runtime security, migrations, health checks, backup, and rollback concerns depend on the completed application.
 
 ## Main Areas
 

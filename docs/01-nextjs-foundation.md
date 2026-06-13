@@ -43,13 +43,13 @@ This page is also a server component by default. Static markup can be rendered w
 
 Global CSS applies to the whole application. For now it contains only a small reset, base document colors, font fallbacks, and form control inheritance.
 
-Task 1.2 will introduce deliberate reusable tokens and accessibility styles. We avoid pretending that the generated starter styles are already our design system.
+Task 1.3 will introduce deliberate reusable tokens and accessibility styles. We avoid pretending that the generated starter styles are already our design system.
 
 ### `src/app/page.module.css`
 
 A CSS Module scopes class names to this page. Another component can use a class called `.card` without accidentally changing this page's card.
 
-The placeholder uses one mobile breakpoint to confirm that the initial route does not overflow narrow screens. The full responsive system belongs to Task 1.2.
+The placeholder uses one mobile breakpoint to confirm that the initial route does not overflow narrow screens. The full responsive system belongs to Task 1.3.
 
 ### `next.config.ts`
 
@@ -86,6 +86,8 @@ Layouts wrap pages below them. Components are server components unless a file st
 ## Why There Is No Database Yet
 
 Next.js and PostgreSQL are separate concepts. First we verify that the web application can lint and build. In Phase 2 we will add PostgreSQL, learn its container configuration, and then connect Prisma. Keeping these steps separate makes failures easier to understand.
+
+Task 1.2 containerizes this minimal application before more code is added. That keeps the first Docker build small and makes the development environment reproducible without mixing application-container concepts with PostgreSQL persistence and networking.
 
 ## Verification
 

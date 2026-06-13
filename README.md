@@ -40,7 +40,13 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Tasks 0.1 and 1.1 are complete. The repository now has a minimal Next.js App Router application with TypeScript and ESLint. The next task is the reusable responsive design foundation.
+Tasks 0.1 and 1.1 are complete. The repository now has a minimal Next.js App Router application with TypeScript and ESLint. The next task is to containerize this minimal application for development before adding the design foundation or product features.
+
+The roadmap separates Docker work into three deliberate steps:
+
+- Task 1.2 containerizes the minimal Next.js development application.
+- Task 2.1 adds PostgreSQL as local infrastructure.
+- Task 7.3 hardens the completed application for production deployment.
 
 ## Local Setup
 
