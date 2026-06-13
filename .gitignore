@@ -40,3 +40,6 @@ Thumbs.db
 
 # Temporary project scaffolds
 /next-scaffold-temp/
+
+# Local project roadmap
+/todo.md
