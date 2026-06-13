@@ -1,0 +1,37 @@
+services:
+  app:
+    build:
+      context: .
+      target: development
+    init: true
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+      WATCHPACK_POLLING: "true"
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+      - type: volume
+        source: app_node_modules
+        target: /app/node_modules
+      - type: volume
+        source: app_next_cache
+        target: /app/.next
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000').then((response) => { if (!response.ok) process.exit(1) }).catch(() => process.exit(1))",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 15s
+
+volumes:
+  app_node_modules:
+  app_next_cache:

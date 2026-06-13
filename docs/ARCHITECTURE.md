@@ -28,6 +28,8 @@ The minimal Next.js application will be containerized immediately after scaffold
 
 PostgreSQL will be added as a separate Docker Compose service in Phase 2. Keeping application containerization and database introduction as distinct tasks makes image-building, networking, persistence, and database concepts easier to learn independently. Production image hardening remains a later delivery task because its optimized build, runtime security, migrations, health checks, backup, and rollback concerns depend on the completed application.
 
+The development container is one application service. The repository is bind-mounted for source updates, while named volumes own Linux `node_modules` and generated `.next` output. The application runs as a non-root user and publishes port `3000` only on the host loopback interface.
+
 ## Main Areas
 
 - **Storefront:** Hero, catalog, product details, search, and filters.

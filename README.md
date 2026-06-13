@@ -25,7 +25,7 @@ This repository is intentionally built in small commits. Each task explains:
 - how to verify it;
 - a reusable LLM prompt for completing or reviewing the task.
 
-The complete task list is in [todo.md](todo.md). Architecture decisions are documented in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Architecture decisions are documented in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). The working roadmap is kept locally in `todo.md` and is intentionally not committed.
 
 ## Planned Stack
 
@@ -40,7 +40,7 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Tasks 0.1 and 1.1 are complete. The repository now has a minimal Next.js App Router application with TypeScript and ESLint. The next task is to containerize this minimal application for development before adding the design foundation or product features.
+Tasks 0.1, 1.1, and 1.2 are complete. The repository has a minimal Next.js App Router application with TypeScript, ESLint, and a reproducible Docker development environment. The next task is the responsive design foundation.
 
 The roadmap separates Docker work into three deliberate steps:
 
@@ -50,6 +50,30 @@ The roadmap separates Docker work into three deliberate steps:
 
 ## Local Setup
 
+### Docker Workflow
+
+Requirement:
+
+- Docker Desktop or another Docker engine with Compose
+
+Build and start the application:
+
+```bash
+docker compose up --build
+```
+
+Open <http://localhost:3000>. Source changes are reflected by the development server.
+
+Stop the application:
+
+```bash
+docker compose down
+```
+
+The container details and troubleshooting commands are documented in [docs/02-docker-development.md](docs/02-docker-development.md).
+
+### Native npm Workflow
+
 Requirements:
 
 - Node.js 20.9 or newer
@@ -58,7 +82,7 @@ Requirements:
 Run the application:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -69,6 +93,7 @@ Verify the foundation:
 ```bash
 npm run lint
 npm run build
+docker compose config
 ```
 
 PostgreSQL is planned but is not connected yet. It will be added in Phase 2 so the database setup can be learned independently from the Next.js scaffold.
