@@ -40,7 +40,7 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Tasks 0.1, 1.1, and 1.2 are complete. The repository has a minimal Next.js App Router application with TypeScript, ESLint, and a reproducible Docker development environment. The next task is the responsive design foundation.
+Tasks 0.1 through 1.3 are complete. The repository has a minimal Next.js App Router application, a reproducible Docker development environment, and a responsive design foundation with shared tokens and accessible controls. The next task is the responsive site shell.
 
 The roadmap separates Docker work into three deliberate steps:
 

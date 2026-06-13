@@ -28,10 +28,12 @@ The `app` service:
 - bind-mounts the repository at `/app` for live source updates;
 - stores `/app/node_modules` in a named volume so host and Linux packages do not mix;
 - stores `/app/.next` in a named volume so generated output stays outside the source tree;
-- enables polling so file updates are detected reliably through Docker Desktop;
+- runs the Webpack development server with polling so file updates are detected reliably through Docker Desktop;
 - checks the homepage until Next.js returns a successful response.
 
 Binding the port to `127.0.0.1` makes the development server available from this computer without exposing it to the local network.
+
+Next.js also allows `127.0.0.1` as a development origin so hot-module updates work whether the browser uses `localhost` or the loopback IP address.
 
 ## Commands
 
