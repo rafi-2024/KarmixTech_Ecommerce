@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { PrismaClient, Decimal } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -65,7 +65,7 @@ async function main() {
       update: {
         name: product.name,
         description: product.description,
-        price: new Decimal(product.price.toString()),
+        price: product.price.toString(),
         stock: product.stock,
         status: product.status as "DRAFT" | "ACTIVE" | "ARCHIVED",
         imageUrl: product.imageUrl,
@@ -76,7 +76,7 @@ async function main() {
         name: product.name,
         slug: product.slug,
         description: product.description,
-        price: new Decimal(product.price.toString()),
+        price: product.price.toString(),
         stock: product.stock,
         status: product.status as "DRAFT" | "ACTIVE" | "ARCHIVED",
         imageUrl: product.imageUrl,
