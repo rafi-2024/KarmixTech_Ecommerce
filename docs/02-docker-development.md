@@ -72,6 +72,13 @@ npm ci
 npm run dev
 ```
 
+This starts the Next.js application directly on the host machine without the full Docker stack.
+
+### When to use each workflow
+
+- Use `docker compose up --build` when you need the full local stack, including PostgreSQL, Prisma migrations, and database seeding.
+- Use `npm run dev` when you want faster frontend iteration, or when you are debugging host-specific issues.
+
 Do not run the native and containerized development servers at the same time because both use port `3000`.
 
 ## Verification

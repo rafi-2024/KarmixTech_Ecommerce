@@ -92,7 +92,15 @@ This prevents the application from starting before PostgreSQL becomes available.
 npm install @prisma/client
 npm install -D prisma
 ```
+## Prisma Config File
 
+By default the seed command is now configured in `prisma.config.ts` rather than in `package.json`.
+
+```ts
+export default {
+  seed: "tsx prisma/seed.ts",
+};
+```
 ## Prisma Schema
 
 A Prisma schema was created:
@@ -247,21 +255,15 @@ _prisma_migrations
 
 # Seed Data
 
-Seeding support was configured using:
-
-```json
-{
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
-  }
-}
-```
+Seeding support is configured via `prisma.config.ts` instead of `package.json`.
 
 Seed command:
 
 ```bash
 npx prisma db seed
 ```
+
+When running in Docker, the app container entrypoint now executes migrations and the seed command automatically before starting Next.js.
 
 The seed process populates:
 

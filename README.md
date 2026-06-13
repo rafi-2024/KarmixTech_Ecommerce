@@ -40,12 +40,12 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Phase 1 is complete. The repository has a minimal Next.js App Router application, a reproducible Docker development environment, a responsive design foundation, and a shared accessible site shell. The next task adds local PostgreSQL with Docker Compose.
+Phase 1 is complete. The repository now includes a minimal Next.js App Router application, a reproducible Docker development environment, a responsive design foundation, and a shared accessible site shell. The current setup also includes local PostgreSQL with Docker Compose, Prisma migrations, and seed data loading for ecommerce catalog development.
 
 The roadmap separates Docker work into three deliberate steps:
 
 - Task 1.2 containerizes the minimal Next.js development application.
-- Task 2.1 adds PostgreSQL as local infrastructure.
+- Task 2.1 adds PostgreSQL as local infrastructure with Prisma migrations.
 - Task 7.3 hardens the completed application for production deployment.
 
 ## Local Setup
@@ -61,6 +61,8 @@ Build and start the application:
 ```bash
 docker compose up --build
 ```
+
+This starts the full local development stack: Next.js, PostgreSQL, Prisma migrations, and seed data loading.
 
 Open <http://localhost:3000>. Source changes are reflected by the development server.
 
@@ -86,6 +88,8 @@ npm ci
 npm run dev
 ```
 
+This starts the Next.js application directly on the host machine without the full Docker stack.
+
 Open <http://localhost:3000>.
 
 Verify the foundation:
@@ -96,7 +100,9 @@ npm run build
 docker compose config
 ```
 
-PostgreSQL is planned but is not connected yet. It will be added in Phase 2 so the database setup can be learned independently from the Next.js scaffold.
+Do not run the native and containerized development servers at the same time because both use port `3000`.
+
+PostgreSQL is connected through Docker Compose and Prisma, so the development stack now includes a fully seeded local database.
 
 ## Repository
 
