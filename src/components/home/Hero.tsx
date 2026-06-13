@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute right-0 bottom-0 h-[400px] w-[400px] rounded-full bg-purple-100 blur-3xl opacity-50" />
       </div>
 
-      <div className="container mx-auto px-6 py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-6 py-2 md:py-2 lg:py-4">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <HeroContent />
           <HeroVisual />
