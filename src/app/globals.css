@@ -97,8 +97,11 @@ p {
   margin-block: 0;
 }
 
-a {
+a:not([class]) {
   color: inherit;
+}
+
+a {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
