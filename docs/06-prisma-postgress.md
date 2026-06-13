@@ -263,6 +263,25 @@ Seed command:
 npx prisma db seed
 ```
 
+## Development Workflow
+
+For the full local stack, start the application with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+This command starts PostgreSQL, applies Prisma migrations, seeds the database, and then starts the Next.js development server.
+
+For frontend-only iteration without the full Docker stack, use the native host workflow:
+
+```bash
+npm ci
+npm run dev
+```
+
+Do not run both workflows at the same time because they share port `3000`.
+
 When running in Docker, the app container entrypoint now executes migrations and the seed command automatically before starting Next.js.
 
 The seed process populates:
