@@ -40,7 +40,7 @@ export default function HeroVisual() {
       <div className="grid grid-cols-2 gap-4">
         <div className="relative aspect-square overflow-hidden rounded-3xl">
           <Image
-            src="/images/categories/electronics.jpg"
+            src="/images/categories/electronics.png"
             alt="Electronics"
             fill
             className="object-cover"
@@ -50,7 +50,7 @@ export default function HeroVisual() {
 
         <div className="relative aspect-square overflow-hidden rounded-3xl">
           <Image
-            src="/images/categories/fashion.jpg"
+            src="/images/categories/fashion.png"
             alt="Fashion"
             fill
             className="object-cover"
@@ -60,7 +60,7 @@ export default function HeroVisual() {
 
         <div className="relative aspect-square overflow-hidden rounded-3xl">
           <Image
-            src="/images/categories/home.jpg"
+            src="/images/categories/home.png"
             alt="Home and Living"
             fill
             className="object-cover"
@@ -69,7 +69,7 @@ export default function HeroVisual() {
 
         <div className="relative aspect-square overflow-hidden rounded-3xl">
           <Image
-            src="/images/categories/beauty.jpg"
+            src="/images/categories/beauty.png"
             alt="Beauty"
             fill
             className="object-cover"
