@@ -44,3 +44,4 @@ Thumbs.db
 # Local project roadmap
 /todo.md
 .env.example
+prisma/migrations/20260613082343_init_catalog/migration.sql
