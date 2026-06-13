@@ -19,9 +19,7 @@ export function SiteFooter() {
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li>
-              <Link href="/#principles">Foundation</Link>
-            </li>
+            
           </ul>
         </nav>
       </div>

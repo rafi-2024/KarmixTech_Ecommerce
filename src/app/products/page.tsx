@@ -33,7 +33,7 @@ export default async function ProductsPage({
   return (
     <div className="container mx-auto px-6 py-24">
       <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <div>
+        <div className="flex-1 ">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
             Product catalog
           </p>
@@ -45,7 +45,8 @@ export default async function ProductsPage({
           </p>
         </div>
 
-        <ProductsFilter
+        <ProductsFilter 
+          className="flex-2 sm:w-auto"
           categories={categoryOptions}
           selectedCategory={filterCategory}
         />

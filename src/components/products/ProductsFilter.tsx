@@ -3,11 +3,12 @@ import Link from "next/link";
 interface ProductsFilterProps {
   categories: { name: string; slug: string }[];
   selectedCategory?: string;
+  className?: string;
 }
 
-export default function ProductsFilter({ categories, selectedCategory }: ProductsFilterProps) {
+export default function ProductsFilter({ categories, selectedCategory, className }: ProductsFilterProps) {
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className={`flex flex-wrap gap-2 ${className ?? ""}`}>
       <span className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
         Category:
       </span>

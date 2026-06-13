@@ -15,7 +15,7 @@
     {
       "id": "3355dbd6-e7d6-4b89-bb0c-63be7991755d",
       "name": "Home & Living",
-      "slug": "home-living",
+      "slug": "home",
       "description": "Shop premium home & living products with curated selections, competitive pricing, and trusted quality for modern consumers."
     },
     {
@@ -627,276 +627,276 @@
     {
       "id": "ad448bcc-7f56-47f0-a830-30e569a8f844",
       "name": "Home & Living Product 1",
-      "slug": "home-living-product-1",
+      "slug": "home-product-1",
       "description": "Home & Living Product 1 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 867.32,
       "stock": 39,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-1.jpg",
+      "imageUrl": "/images/products/home/home-product-1.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "f8aac29d-eba5-4788-9d27-e6ec413932bb",
       "name": "Home & Living Product 2",
-      "slug": "home-living-product-2",
+      "slug": "home-product-2",
       "description": "Home & Living Product 2 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 430.8,
       "stock": 496,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-2.jpg",
+      "imageUrl": "/images/products/home/home-product-2.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "718cacc9-226e-4ab4-a1e1-d731847fd404",
       "name": "Home & Living Product 3",
-      "slug": "home-living-product-3",
+      "slug": "home-product-3",
       "description": "Home & Living Product 3 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 542.22,
       "stock": 171,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-3.jpg",
+      "imageUrl": "/images/products/home/home-product-3.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "10fc5f52-01d1-4c39-9eca-c5609c8e910d",
       "name": "Home & Living Product 4",
-      "slug": "home-living-product-4",
+      "slug": "home-product-4",
       "description": "Home & Living Product 4 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 310.55,
       "stock": 474,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-4.jpg",
+      "imageUrl": "/images/products/home/home-product-4.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "ef5349b5-b8a3-4d77-919e-39cf5c8194c3",
       "name": "Home & Living Product 5",
-      "slug": "home-living-product-5",
+      "slug": "home-product-5",
       "description": "Home & Living Product 5 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 205.77,
       "stock": 222,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-5.jpg",
+      "imageUrl": "/images/products/home/home-product-5.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "ba4fc075-b9ef-4474-baa4-cefbf05b6d85",
       "name": "Home & Living Product 6",
-      "slug": "home-living-product-6",
+      "slug": "home-product-6",
       "description": "Home & Living Product 6 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 733.45,
       "stock": 64,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-6.jpg",
+      "imageUrl": "/images/products/home/home-product-6.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "e1347d1f-a740-450b-ba36-59c6cb7f8ed2",
       "name": "Home & Living Product 7",
-      "slug": "home-living-product-7",
+      "slug": "home-product-7",
       "description": "Home & Living Product 7 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 180.46,
       "stock": 259,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-7.jpg",
+      "imageUrl": "/images/products/home/home-product-7.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "9a0bc855-dc19-43c6-84c3-51f4437f675f",
       "name": "Home & Living Product 8",
-      "slug": "home-living-product-8",
+      "slug": "home-product-8",
       "description": "Home & Living Product 8 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 258.93,
       "stock": 451,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-8.jpg",
+      "imageUrl": "/images/products/home/home-product-8.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "9507e068-7957-4775-b386-ca37e421366f",
       "name": "Home & Living Product 9",
-      "slug": "home-living-product-9",
+      "slug": "home-product-9",
       "description": "Home & Living Product 9 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 335.15,
       "stock": 302,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-9.jpg",
+      "imageUrl": "/images/products/home/home-product-9.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "a98a9d87-2cfa-4c5b-b393-ca5547aa8c96",
       "name": "Home & Living Product 10",
-      "slug": "home-living-product-10",
+      "slug": "home-product-10",
       "description": "Home & Living Product 10 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 575.93,
       "stock": 94,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-10.jpg",
+      "imageUrl": "/images/products/home/home-product-10.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "83821e06-4f9c-47e4-a4d9-2125dae9d922",
       "name": "Home & Living Product 11",
-      "slug": "home-living-product-11",
+      "slug": "home-product-11",
       "description": "Home & Living Product 11 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 378.63,
       "stock": 428,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-11.jpg",
+      "imageUrl": "/images/products/home/home-product-11.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "54ac2632-1e42-46ac-9f14-4c28a8463a14",
       "name": "Home & Living Product 12",
-      "slug": "home-living-product-12",
+      "slug": "home-product-12",
       "description": "Home & Living Product 12 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 722.56,
       "stock": 36,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-12.jpg",
+      "imageUrl": "/images/products/home/home-product-12.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "969de36d-4418-41a7-9aba-8adaa8d2b3c7",
       "name": "Home & Living Product 13",
-      "slug": "home-living-product-13",
+      "slug": "home-product-13",
       "description": "Home & Living Product 13 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 638.17,
       "stock": 141,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-13.jpg",
+      "imageUrl": "/images/products/home/home-product-13.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "7bf34c99-3c98-4e27-9253-101a3817f9b7",
       "name": "Home & Living Product 14",
-      "slug": "home-living-product-14",
+      "slug": "home-product-14",
       "description": "Home & Living Product 14 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 434.17,
       "stock": 419,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-14.jpg",
+      "imageUrl": "/images/products/home/home-product-14.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "f386a3c0-4633-47b7-b1da-4d74b30f5a55",
       "name": "Home & Living Product 15",
-      "slug": "home-living-product-15",
+      "slug": "home-product-15",
       "description": "Home & Living Product 15 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 216.75,
       "stock": 237,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-15.jpg",
+      "imageUrl": "/images/products/home/home-product-15.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "f11489ad-97d5-4b37-a874-f41ec57b8d22",
       "name": "Home & Living Product 16",
-      "slug": "home-living-product-16",
+      "slug": "home-product-16",
       "description": "Home & Living Product 16 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 817.57,
       "stock": 24,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-16.jpg",
+      "imageUrl": "/images/products/home/home-product-16.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "59c56721-83d5-45f9-baba-46a4f2d2879b",
       "name": "Home & Living Product 17",
-      "slug": "home-living-product-17",
+      "slug": "home-product-17",
       "description": "Home & Living Product 17 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 834.79,
       "stock": 43,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-17.jpg",
+      "imageUrl": "/images/products/home/home-product-17.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "fc9dde7c-9c47-4a31-bb1e-46a5142101fb",
       "name": "Home & Living Product 18",
-      "slug": "home-living-product-18",
+      "slug": "home-product-18",
       "description": "Home & Living Product 18 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 67.29,
       "stock": 187,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-18.jpg",
+      "imageUrl": "/images/products/home/home-product-18.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "c75a20d8-0743-4051-b398-949e7b96adde",
       "name": "Home & Living Product 19",
-      "slug": "home-living-product-19",
+      "slug": "home-product-19",
       "description": "Home & Living Product 19 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 978.72,
       "stock": 279,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-19.jpg",
+      "imageUrl": "/images/products/home/home-product-19.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "433fec53-d662-4403-b40f-c441c817e0c7",
       "name": "Home & Living Product 20",
-      "slug": "home-living-product-20",
+      "slug": "home-product-20",
       "description": "Home & Living Product 20 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 835.27,
       "stock": 493,
       "status": "ACTIVE",
-      "imageUrl": "/images/products/home-living/home-living-product-20.jpg",
+      "imageUrl": "/images/products/home/home-product-20.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "d9559059-5878-437c-af7f-845343c2f426",
       "name": "Home & Living Product 21",
-      "slug": "home-living-product-21",
+      "slug": "home-product-21",
       "description": "Home & Living Product 21 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 551.75,
       "stock": 423,
       "status": "DRAFT",
-      "imageUrl": "/images/products/home-living/home-living-product-21.jpg",
+      "imageUrl": "/images/products/home/home-product-21.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "de7d3b6d-074e-4245-a8d5-36823a8358e1",
       "name": "Home & Living Product 22",
-      "slug": "home-living-product-22",
+      "slug": "home-product-22",
       "description": "Home & Living Product 22 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 523.81,
       "stock": 215,
       "status": "DRAFT",
-      "imageUrl": "/images/products/home-living/home-living-product-22.jpg",
+      "imageUrl": "/images/products/home/home-product-22.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "b3012e62-723e-4cd9-9afc-4c262f88fea7",
       "name": "Home & Living Product 23",
-      "slug": "home-living-product-23",
+      "slug": "home-product-23",
       "description": "Home & Living Product 23 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 701.64,
       "stock": 214,
       "status": "DRAFT",
-      "imageUrl": "/images/products/home-living/home-living-product-23.jpg",
+      "imageUrl": "/images/products/home/home-product-23.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "97feed1f-21a8-4cfd-a282-e72376b54c37",
       "name": "Home & Living Product 24",
-      "slug": "home-living-product-24",
+      "slug": "home-product-24",
       "description": "Home & Living Product 24 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 514.35,
       "stock": 62,
       "status": "DRAFT",
-      "imageUrl": "/images/products/home-living/home-living-product-24.jpg",
+      "imageUrl": "/images/products/home/home-product-24.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
       "id": "652ee95c-53fc-4a87-9ff7-98720fd3540e",
       "name": "Home & Living Product 25",
-      "slug": "home-living-product-25",
+      "slug": "home-product-25",
       "description": "Home & Living Product 25 is a premium ecommerce item designed for quality, durability, and everyday performance. Built to meet modern consumer expectations with reliable materials, thoughtful design, and excellent value. Suitable for personal and professional use, this product offers a balanced combination of functionality, aesthetics, and long-term satisfaction.",
       "price": 681.59,
       "stock": 28,
       "status": "ARCHIVED",
-      "imageUrl": "/images/products/home-living/home-living-product-25.jpg",
+      "imageUrl": "/images/products/home/home-product-25.jpg",
       "categoryId": "3355dbd6-e7d6-4b89-bb0c-63be7991755d"
     },
     {
@@ -3388,7 +3388,7 @@
     },
     {
       "category": "Home & Living",
-      "heroPath": "/images/categories/home-living.jpg",
+      "heroPath": "/images/categories/home.jpg",
       "heroPrompt": "Home & Living category showcase, ultra realistic, professional commercial photography, ecommerce category banner, studio quality, 16:9"
     },
     {
@@ -3689,128 +3689,128 @@
       "imagePrompt": "Fashion Product 25, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-1",
-      "imagePath": "/images/products/home-living/home-living-product-1.jpg",
+      "productSlug": "home-product-1",
+      "imagePath": "/images/products/home/home-product-1.jpg",
       "imagePrompt": "Home & Living Product 1, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-2",
-      "imagePath": "/images/products/home-living/home-living-product-2.jpg",
+      "productSlug": "home-product-2",
+      "imagePath": "/images/products/home/home-product-2.jpg",
       "imagePrompt": "Home & Living Product 2, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-3",
-      "imagePath": "/images/products/home-living/home-living-product-3.jpg",
+      "productSlug": "home-product-3",
+      "imagePath": "/images/products/home/home-product-3.jpg",
       "imagePrompt": "Home & Living Product 3, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-4",
-      "imagePath": "/images/products/home-living/home-living-product-4.jpg",
+      "productSlug": "home-product-4",
+      "imagePath": "/images/products/home/home-product-4.jpg",
       "imagePrompt": "Home & Living Product 4, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-5",
-      "imagePath": "/images/products/home-living/home-living-product-5.jpg",
+      "productSlug": "home-product-5",
+      "imagePath": "/images/products/home/home-product-5.jpg",
       "imagePrompt": "Home & Living Product 5, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-6",
-      "imagePath": "/images/products/home-living/home-living-product-6.jpg",
+      "productSlug": "home-product-6",
+      "imagePath": "/images/products/home/home-product-6.jpg",
       "imagePrompt": "Home & Living Product 6, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-7",
-      "imagePath": "/images/products/home-living/home-living-product-7.jpg",
+      "productSlug": "home-product-7",
+      "imagePath": "/images/products/home/home-product-7.jpg",
       "imagePrompt": "Home & Living Product 7, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-8",
-      "imagePath": "/images/products/home-living/home-living-product-8.jpg",
+      "productSlug": "home-product-8",
+      "imagePath": "/images/products/home/home-product-8.jpg",
       "imagePrompt": "Home & Living Product 8, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-9",
-      "imagePath": "/images/products/home-living/home-living-product-9.jpg",
+      "productSlug": "home-product-9",
+      "imagePath": "/images/products/home/home-product-9.jpg",
       "imagePrompt": "Home & Living Product 9, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-10",
-      "imagePath": "/images/products/home-living/home-living-product-10.jpg",
+      "productSlug": "home-product-10",
+      "imagePath": "/images/products/home/home-product-10.jpg",
       "imagePrompt": "Home & Living Product 10, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-11",
-      "imagePath": "/images/products/home-living/home-living-product-11.jpg",
+      "productSlug": "home-product-11",
+      "imagePath": "/images/products/home/home-product-11.jpg",
       "imagePrompt": "Home & Living Product 11, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-12",
-      "imagePath": "/images/products/home-living/home-living-product-12.jpg",
+      "productSlug": "home-product-12",
+      "imagePath": "/images/products/home/home-product-12.jpg",
       "imagePrompt": "Home & Living Product 12, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-13",
-      "imagePath": "/images/products/home-living/home-living-product-13.jpg",
+      "productSlug": "home-product-13",
+      "imagePath": "/images/products/home/home-product-13.jpg",
       "imagePrompt": "Home & Living Product 13, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-14",
-      "imagePath": "/images/products/home-living/home-living-product-14.jpg",
+      "productSlug": "home-product-14",
+      "imagePath": "/images/products/home/home-product-14.jpg",
       "imagePrompt": "Home & Living Product 14, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-15",
-      "imagePath": "/images/products/home-living/home-living-product-15.jpg",
+      "productSlug": "home-product-15",
+      "imagePath": "/images/products/home/home-product-15.jpg",
       "imagePrompt": "Home & Living Product 15, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-16",
-      "imagePath": "/images/products/home-living/home-living-product-16.jpg",
+      "productSlug": "home-product-16",
+      "imagePath": "/images/products/home/home-product-16.jpg",
       "imagePrompt": "Home & Living Product 16, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-17",
-      "imagePath": "/images/products/home-living/home-living-product-17.jpg",
+      "productSlug": "home-product-17",
+      "imagePath": "/images/products/home/home-product-17.jpg",
       "imagePrompt": "Home & Living Product 17, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-18",
-      "imagePath": "/images/products/home-living/home-living-product-18.jpg",
+      "productSlug": "home-product-18",
+      "imagePath": "/images/products/home/home-product-18.jpg",
       "imagePrompt": "Home & Living Product 18, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-19",
-      "imagePath": "/images/products/home-living/home-living-product-19.jpg",
+      "productSlug": "home-product-19",
+      "imagePath": "/images/products/home/home-product-19.jpg",
       "imagePrompt": "Home & Living Product 19, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-20",
-      "imagePath": "/images/products/home-living/home-living-product-20.jpg",
+      "productSlug": "home-product-20",
+      "imagePath": "/images/products/home/home-product-20.jpg",
       "imagePrompt": "Home & Living Product 20, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-21",
-      "imagePath": "/images/products/home-living/home-living-product-21.jpg",
+      "productSlug": "home-product-21",
+      "imagePath": "/images/products/home/home-product-21.jpg",
       "imagePrompt": "Home & Living Product 21, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-22",
-      "imagePath": "/images/products/home-living/home-living-product-22.jpg",
+      "productSlug": "home-product-22",
+      "imagePath": "/images/products/home/home-product-22.jpg",
       "imagePrompt": "Home & Living Product 22, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-23",
-      "imagePath": "/images/products/home-living/home-living-product-23.jpg",
+      "productSlug": "home-product-23",
+      "imagePath": "/images/products/home/home-product-23.jpg",
       "imagePrompt": "Home & Living Product 23, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-24",
-      "imagePath": "/images/products/home-living/home-living-product-24.jpg",
+      "productSlug": "home-product-24",
+      "imagePath": "/images/products/home/home-product-24.jpg",
       "imagePrompt": "Home & Living Product 24, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {
-      "productSlug": "home-living-product-25",
-      "imagePath": "/images/products/home-living/home-living-product-25.jpg",
+      "productSlug": "home-product-25",
+      "imagePath": "/images/products/home/home-product-25.jpg",
       "imagePrompt": "Home & Living Product 25, ultra realistic, commercial product photography, clean white background, professional studio lighting, centered composition, high detail, 4k quality, ecommerce catalog image"
     },
     {

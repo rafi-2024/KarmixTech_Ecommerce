@@ -6,7 +6,9 @@ import styles from "./site-header.module.css";
 
 const navigationItems = [
   { href: "/", label: "Home" },
-  { href: "/#principles", label: "Foundation" },
+  { href: "/login", label: "Login" },
+  { href: "/Signup", label: "Register" },
+
 ];
 
 export function SiteHeader() {
