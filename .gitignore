@@ -43,3 +43,4 @@ Thumbs.db
 
 # Local project roadmap
 /todo.md
+.env.example
