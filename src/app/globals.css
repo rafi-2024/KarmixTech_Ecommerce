@@ -59,6 +59,34 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.siteFrame {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.siteMain {
+  flex: 1;
+}
+
+.skipLink {
+  position: fixed;
+  z-index: 100;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  color: var(--color-surface);
+  background: var(--color-text);
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(calc(-100% - var(--space-6)));
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
 h1,
 h2,
 h3,

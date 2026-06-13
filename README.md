@@ -40,7 +40,7 @@ Framework-specific choices will be confirmed against the installed versions when
 
 ## Current Status
 
-Tasks 0.1 through 1.3 are complete. The repository has a minimal Next.js App Router application, a reproducible Docker development environment, and a responsive design foundation with shared tokens and accessible controls. The next task is the responsive site shell.
+Phase 1 is complete. The repository has a minimal Next.js App Router application, a reproducible Docker development environment, a responsive design foundation, and a shared accessible site shell. The next task adds local PostgreSQL with Docker Compose.
 
 The roadmap separates Docker work into three deliberate steps:
 

@@ -1,5 +1,4 @@
 .page {
-  min-height: 100vh;
   padding-block: var(--space-6);
   background:
     radial-gradient(circle at top left, var(--color-brand-soft) 0, transparent 34%),

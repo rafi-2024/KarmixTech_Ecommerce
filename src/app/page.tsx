@@ -2,15 +2,15 @@ import styles from "./page.module.css";
 
 export default function HomePage() {
   return (
-    <main className={styles.page}>
+    <div className={styles.page}>
       <div className={`container ${styles.layout}`}>
         <section className={styles.hero} aria-labelledby="page-title">
-          <p className={styles.status}>Task 1.3 complete</p>
-          <h1 id="page-title">A responsive foundation for every next step.</h1>
+          <p className={styles.status}>Task 1.4 complete</p>
+          <h1 id="page-title">The shared site shell is ready to grow.</h1>
           <p className={styles.intro}>
-            The project now has shared color, type, spacing, container, button,
-            and focus rules. Future pages can grow from a consistent,
-            accessible base instead of rebuilding these decisions.
+            Every page now shares an accessible header, responsive navigation,
+            main content landmark, and footer. Product features can arrive
+            without rebuilding the frame around them.
           </p>
           <div className={styles.actions}>
             <a className="button buttonPrimary" href="#principles">
@@ -31,7 +31,7 @@ export default function HomePage() {
             </div>
             <div>
               <dt>Next lesson</dt>
-              <dd>Responsive site shell</dd>
+              <dd>PostgreSQL with Docker Compose</dd>
             </div>
           </dl>
         </section>
@@ -67,6 +67,6 @@ export default function HomePage() {
           </div>
         </section>
       </div>
-    </main>
+    </div>
   );
 }
