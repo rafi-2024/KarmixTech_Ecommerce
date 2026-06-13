@@ -1,4 +1,4 @@
-import { PrismaClient, ProductStatus } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -29,7 +29,7 @@ async function main() {
         slug: "wireless-headphones",
         price: 99.99,
         stock: 50,
-        status: ProductStatus.ACTIVE,
+        status: "ACTIVE",
         categoryId: electronics.id,
       },
       {
@@ -37,7 +37,7 @@ async function main() {
         slug: "gaming-mouse",
         price: 49.99,
         stock: 100,
-        status: ProductStatus.ACTIVE,
+        status: "ACTIVE",
         categoryId: electronics.id,
       },
       {
@@ -45,7 +45,7 @@ async function main() {
         slug: "cotton-tshirt",
         price: 19.99,
         stock: 200,
-        status: ProductStatus.ACTIVE,
+        status: "ACTIVE",
         categoryId: clothing.id,
       },
     ],
